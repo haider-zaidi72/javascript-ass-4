@@ -1,32 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="./style.css">
+
+
 </head>
 <body>
-    
-    <h1 id="a" id="ab">USER FORM</h1>
-<form action="" id="ab">
-    <label for="abc"> Name:</label>
-    <input id="abc" type="text" placeholder="Full Name"><br><br>
-    <label for="bcs">Age: </label>
-    <input type="text" id="bcs" placeholder="March 20, 1995"><br><br>
-    <label for="cba">CNIC:</label>
-    <input type="text" id="cba" placeholder="00000-0000000-0"><br><br>
-    <label for="dab">Roll#:</label>
-    <input type="text" id="dab" placeholder=C-524855><br><br>
-    <!-- <input type="submit" id="ab" onclick="click()"> -->
-    <button onclick="click()">Submit</button>
-
-
-
-</form>
-    
-
+    <h2>Student Form</h2>
+    <form id="myForm">
+        First Name: <input type="text" id="firstName">
+        Last Name: <input type="text" id="lastName">
+        Age: <input type="number" id="age">
+        CNIC #: <input type="text" id="cnic">
+        Roll #: <input type="text" id="roll">
+        Message: <textarea id="message"></textarea>
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
 
 
     <script src="./java.js"></script>
 </body>
-</html
+</html>
