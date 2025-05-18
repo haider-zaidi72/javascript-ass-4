@@ -1,3 +1,10 @@
         body { font-family: Arial; max-width: 500px; margin: 20px; }
         input, textarea { display: block; margin-bottom: 10px; width: 100%; }
         button { padding: 8px 15px; background: #4CAF50; color: white; border: none; }
+
+        #randomNumber {
+            font-size: 24px;
+            padding: 10px;
+            border: 1px dashed #333;
+            min-height: 30px; /* Ensures space is reserved */
+        }

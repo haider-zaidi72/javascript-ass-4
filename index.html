@@ -6,7 +6,7 @@
 
 
 </head>
-<body>
+<body id="clr">
     <!-- Java script form start -->
     <h2>Student Form</h2>
     <form id="myForm">
@@ -16,7 +16,15 @@
         CNIC #: <input type="text" id="cnic">
         Roll #: <input type="text" id="roll">
         Message: <textarea id="message"></textarea>
-        <button type="button" onclick="validateForm()">Submit</button>
+        <button id="click" type="button" onclick="validateForm()">Submit</button>
+        <button type="button" onclick="clrChange()">Change Color</button><br><br>
+
+    
+
+         <h2>Random Number Generator</h2>
+    <button onclick="generateRandomNumber()">Generate Random Number</button><br><br>
+    <div id="randomNumber"></div>
+
     </form>
    <!-- form end -->
 
