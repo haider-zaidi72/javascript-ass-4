@@ -7,13 +7,24 @@
             let roll = document.getElementById("roll").value;
             let message = document.getElementById("message").value;
 
+            const cardHTML = `
+                <div class="student-card">
+                    <h3>Student Information</h3>
+                    <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+                    <p><strong>Age:</strong> ${age}</p>
+                    <p><strong>CNIC:</strong> ${cnic}</p>
+                    <p><strong>Roll #:</strong> ${roll}</p>
+                    <p><strong>Message:</strong> ${message}</p>
+                </div>`
+// Display the card
+                document.getElementById("studentCardContainer").innerHTML = cardHTML;
+
             // Check if any field is empty
-            if (!firstName || !lastName || !age || !cnic || !roll || !message) {
-                alert("Please fill all empty fields");
-            } else {
-                alert("Form submitted successfully!");
-               
-            }
+            // if (!firstName || !lastName || !age || !cnic || !roll || !message) {
+            //     alert("Please fill all empty fields");
+            // } else {
+                               
+            // }
         }
 
 
